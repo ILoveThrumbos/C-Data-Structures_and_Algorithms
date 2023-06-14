@@ -44,7 +44,10 @@ namespace MyClassLibrary
         }
         public int CompareTo(Student other)
         {
-            throw new NotImplementedException();
+            if (other == null)
+                return 1;
+
+            return Name.CompareTo(other.Name);
         }
         public override string ToString()
         {

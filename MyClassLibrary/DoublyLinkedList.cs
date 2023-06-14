@@ -17,8 +17,8 @@ namespace MyClassLibrary
 
     public class DoublyLinkedList<T>
     {
-        private DoublyLinkedListNode<T> head;
-        private DoublyLinkedListNode<T> tail;
+        public DoublyLinkedListNode<T> head;
+        public DoublyLinkedListNode<T> tail;
 
         public void InsertAtHead(T value)
         {

@@ -8,6 +8,18 @@ namespace MyClassLibrary
 {
     public static class Utility
     {
+        public static void SortList<T>(List<T> list) where T : IComparable<T>
+        {
+            list.Sort();
+        }
+
+        public static void SortListDescending<T>(List<T> list) where T : IComparable<T>
+        {
+            list.Sort();
+            list.Reverse();
+        }
+
+
         public static int BinarySearch<T>(List<T> list, T item) where T : IComparable<T>
         {
             int left = 0;
@@ -35,6 +47,8 @@ namespace MyClassLibrary
             return -1; 
         }
 
+
+
         public static int SequentialSearch<T>(List<T> list, T item) where T : IComparable<T>
         {
             for (int i = 0; i < list.Count; i++)
@@ -47,5 +61,9 @@ namespace MyClassLibrary
 
             return -1; 
         }
+
+
+
     }
 }
+

@@ -17,6 +17,7 @@ namespace Test_MyLibrary
         [SetUp]
         public void Setup()
         {
+            // initiates students array list
             students = new List<Student>
             {
                 new Student("Alice", "alice@outlook.com", "12345678", 123, "BSc", "01/01/2022"),
@@ -32,6 +33,9 @@ namespace Test_MyLibrary
             };
         }
 
+        /// <summary>
+        /// Tests the LinearSearch method which returns index of found student
+        /// </summary>
         [Test]
         public void LinearSearch_StudentFound_ReturnsIndex()
         {
@@ -46,6 +50,9 @@ namespace Test_MyLibrary
             }
         }
 
+        /// <summary>
+        /// Tests the BinarySearch method which returns index of found student
+        /// </summary>
         [Test]
         public void BinarySearch_StudentFound_ReturnsIndex()
         {
@@ -60,6 +67,9 @@ namespace Test_MyLibrary
             }
         }
 
+        /// <summary>
+        /// Tests the SortList method using Bubble sort 
+        /// </summary>
         [Test]
         public void BubbleSort_SortsListInAscendingOrder()
         {
@@ -80,6 +90,9 @@ namespace Test_MyLibrary
             }
         }
 
+        /// <summary>
+        /// Tests the InsertAtHead method adds a student at a head
+        /// </summary>
         [Test]
         public void DoublyLinkedList_InsertAtHead_AddsStudentAtHead()
         {
@@ -97,6 +110,9 @@ namespace Test_MyLibrary
             }
         }
 
+        /// <summary>
+        /// Tests the InsertAtTail method which adds a student at a tail
+        /// </summary>
         [Test]
         public void DoublyLinkedList_InsertAtTail_AddsStudentAtTail()
         {
@@ -113,6 +129,9 @@ namespace Test_MyLibrary
             }
         }
 
+        /// <summary>
+        /// Tests the Find method which finds student from list
+        /// </summary>
         [Test]
         public void DoublyLinkedList_Find_FindsExistingStudent()
         {
@@ -132,6 +151,9 @@ namespace Test_MyLibrary
             }
         }
 
+        /// <summary>
+        /// Tests the Delete method which removes student from list
+        /// </summary>
         [Test]
         public void DoublyLinkedList_Delete_RemovesStudentFromList()
         {
@@ -149,8 +171,8 @@ namespace Test_MyLibrary
                 Console.WriteLine("An exception occurred: " + ex.Message);
             }
         }
-       
-        
+
+
 
     }
 }

@@ -11,13 +11,13 @@ namespace Bug_Testing1
     {
         static void Main(string[] args)
         {
-            //Address address = new Address("123", "Street St", "Suburb", "12345", "State");
+            Address address = new Address("123", "Street St", "Suburb", "12345", "State");
 
-            //Console.WriteLine(address.ToString());
+            Console.WriteLine(address.ToString());
 
-            //Student student = new Student("mike", "mike@outlook.com", "0411111111", 1111, "me1", "04/11/2022");
+            Student student = new Student("mike", "mike@outlook.com", "0411111111", 1111, "me1", "04/11/2022");
 
-            //Console.WriteLine(student.ToString());
+            Console.WriteLine(student.ToString());
 
             List<int> numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
